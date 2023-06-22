@@ -10,6 +10,7 @@ input.onGesture(Gesture.Shake, function () {
             # # # # #
             # # # # #
             `)
+        music.play(music.createSoundExpression(WaveShape.Noise, 500, 499, 255, 0, 750, SoundExpressionEffect.None, InterpolationCurve.Linear), music.PlaybackMode.UntilDone)
     }
     if (包剪揼 == 2) {
         basic.showLeds(`
@@ -19,6 +20,7 @@ input.onGesture(Gesture.Shake, function () {
             # . . # #
             # # . # #
             `)
+        music.play(music.createSoundExpression(WaveShape.Noise, 500, 499, 255, 0, 750, SoundExpressionEffect.None, InterpolationCurve.Linear), music.PlaybackMode.UntilDone)
     }
     if (包剪揼 == 3) {
         basic.showLeds(`
@@ -28,6 +30,7 @@ input.onGesture(Gesture.Shake, function () {
             . . # # #
             . . # # #
             `)
+        music.play(music.createSoundExpression(WaveShape.Noise, 500, 499, 255, 0, 750, SoundExpressionEffect.None, InterpolationCurve.Linear), music.PlaybackMode.UntilDone)
     }
     music.playMelody("A C5 B A A A B C5 ", 1935)
     game.pause()
@@ -38,24 +41,3 @@ input.onButtonPressed(Button.AB, function () {
 })
 let 包剪揼 = 0
 包剪揼 = 0
-basic.showLeds(`
-    # # # # #
-    # # # # #
-    # # # # #
-    # # # # #
-    # # # # #
-    `)
-basic.showLeds(`
-    # . . . #
-    . # . # .
-    . . # . .
-    # . . # #
-    # # . # #
-    `)
-basic.showLeds(`
-    . . . . .
-    . . # # #
-    # # # # #
-    . . # # #
-    . . # # #
-    `)
